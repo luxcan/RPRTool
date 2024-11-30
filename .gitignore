@@ -1,0 +1,17 @@
+# Visual Studio
+.vs/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+x64/
+x86/
+build/
+bld/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+bin/
+Properties/
