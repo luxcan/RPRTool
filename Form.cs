@@ -33,7 +33,9 @@ namespace RPRTool {
 
             var fractionalHr = totalHrs - hrsSinceEpoch;
             var timePastTheHr = Math.Floor(fractionalHr * (Math.Pow(2, 31) - 1));
-            tboxResult.AppendText("\nTimePastTheHour: " + timePastTheHr);
+            tboxResult.AppendText("\nTimePastTheHour (2^31-1): " + timePastTheHr);
+            timePastTheHr = Math.Floor(fractionalHr * (Math.Pow(2, 32) - 1));
+            tboxResult.AppendText("\nTimePastTheHour (2^32-1): " + timePastTheHr);
             tboxResult.AppendText("\n\n");
         }
         #endregion
